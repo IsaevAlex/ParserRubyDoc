@@ -25,27 +25,50 @@
 </ul>
 
 <h6>Пример того, что получится (в XML):</h6>
-Model:
-    Namespace (includes N):
-    Class (includes N, is T):
-    Function (includes N, AM, S, T)
-    Property (includes N, AM, S, T)
-    Function (includes AM, S, T)
-    Property (includes AM, S, T)
+<ul>Model:
+  <li>Namespace (includes N):</li>
+  <li>Class (includes N, is T):</li>
+  <li>Function (includes N, AM, S, T)</li>
+  <li> Property (includes N, AM, S, T)</li>
+  <li>Function (includes AM, S, T)</li>
+  <li>Property (includes AM, S, T)</li>
+</ul>
 
-Detailed:
-  Namespace
-  File Location (/src/file.cs)
-  	Logical Location (System.Collections.Immutable)
-  Function:
-  Argument Type
-  Argument Name
+<ul>Detailed:
+  <li>Namespace</li>
+  <li>File Location (/src/file.cs)</li>
+  <li>Logical Location (System.Collections.Immutable)</li>
+  <li>Function:</li>
+  <li>Argument Type</li>
+  <li>  Argument Name</li>
+</ul>
 
-Description:
-  Name (aka N)
-  Access Modifiers (aka AM): [Private/Protected/Public/etc]
-  Scope (aka S) [Instance]
-  Type (aka T) [Object]
+<ul>Description:
+  <li>Name (aka N)</li>
+  <li>Access Modifiers (aka AM): [Private/Protected/Public/etc]</li>
+  <li>Scope (aka S) [Instance]</li>
+  <li>Type (aka T) [Object]</li>
+</ul>
+    
+    
+    
+   
+    
+    
+
+
+  
+  
+  
+  
+  
+
+
+
+  
+  
+  
+  
 
 
 
