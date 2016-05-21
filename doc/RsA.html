@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class RsA - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-calculation_N">#calculation_N</a>
+    
+    <li ><a href="#method-i-calculation_f">#calculation_f</a>
+    
+    <li ><a href="#method-i-egcd">#egcd</a>
+    
+    <li ><a href="#method-i-generating_p_q">#generating_p_q</a>
+    
+    <li ><a href="#method-i-index">#index</a>
+    
+    <li ><a href="#method-i-putting_word">#putting_word</a>
+    
+    <li ><a href="#method-i-random_e">#random_e</a>
+    
+    <li ><a href="#method-i-user_A_crypt_private_key">#user_A_crypt_private_key</a>
+    
+    <li ><a href="#method-i-user_A_crypt_public_key">#user_A_crypt_public_key</a>
+    
+    <li ><a href="#method-i-user_B_crypt_private_key">#user_B_crypt_private_key</a>
+    
+    <li ><a href="#method-i-user_B_crypt_public_key">#user_B_crypt_public_key</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-RsA">
+  <h1 id="class-RsA" class="class">
+    class RsA
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-N" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">N</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-t" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">t</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-calculation_N" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">calculation_N</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>метод для вычисления <a href="RsA.html#attribute-i-N">#N</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="calculation_N-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">calculation_N</span>
+    <span class="ruby-ivar">@N</span> = <span class="ruby-ivar">@p</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@q</span>
+
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;N пользователя  равен: #{@N}&quot;</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-calculation_f" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">calculation_f</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>вычисляем f</p>
+          
+          
+
+          
+          <div class="method-source-code" id="calculation_f-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 26</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">calculation_f</span>
+    <span class="ruby-ivar">@f</span> = (<span class="ruby-ivar">@p</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>)<span class="ruby-operator">*</span>(<span class="ruby-ivar">@q</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>)
+
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;f пользователя  равен: #{@f}&quot;</span> 
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-egcd" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">egcd</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>вычисляем закрытый ключ d с помощью расширенного алгоритма Евклида</p>
+          
+          
+
+          
+          <div class="method-source-code" id="egcd-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">egcd</span>
+            <span class="ruby-ivar">@d</span> = <span class="ruby-constant">RSA</span><span class="ruby-operator">::</span><span class="ruby-constant">Math</span>.<span class="ruby-identifier">egcd</span>(<span class="ruby-ivar">@e</span>,<span class="ruby-ivar">@f</span>) 
+            <span class="ruby-keyword">if</span> <span class="ruby-ivar">@d</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> 
+                    <span class="ruby-ivar">@t</span> = <span class="ruby-ivar">@d</span>[<span class="ruby-value">0</span>]
+            <span class="ruby-keyword">else</span>  
+                    <span class="ruby-ivar">@t</span> = <span class="ruby-ivar">@d</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">+</span> <span class="ruby-ivar">@f</span> 
+            <span class="ruby-keyword">end</span>
+
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;d пользователя  равен: #{@d}&quot;</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;t пользователя  равен: #{@t}&quot;</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-generating_p_q" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generating_p_q</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Метод для генерирования простых чисел</p>
+          
+          
+
+          
+          <div class="method-source-code" id="generating_p_q-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generating_p_q</span>
+            <span class="ruby-identifier">numbers</span> = <span class="ruby-constant">Prime</span>.<span class="ruby-identifier">take</span>(<span class="ruby-value">100</span>)
+            <span class="ruby-ivar">@p</span> = <span class="ruby-identifier">numbers</span>.<span class="ruby-identifier">sample</span>  <span class="ruby-comment">#р присвоили простое число</span>
+            <span class="ruby-ivar">@q</span> = <span class="ruby-identifier">numbers</span>.<span class="ruby-identifier">sample</span>  <span class="ruby-comment">#q присвоили простое число</span>
+            
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;p пользователя  равен: #{@p}&quot;</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;q пользователя  равен: #{@q}&quot;</span>
+    <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-putting_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">putting_word</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>метод для ввода сообщения</p>
+          
+          
+
+          
+          <div class="method-source-code" id="putting_word-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 58</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">putting_word</span>
+        <span class="ruby-identifier">print</span> <span class="ruby-string">&quot;Введите слово:&quot;</span>
+        <span class="ruby-ivar">@word</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+        
+        <span class="ruby-identifier">@@array</span> = <span class="ruby-ivar">@word</span>.<span class="ruby-identifier">codepoints</span>.<span class="ruby-identifier">to_a</span> <span class="ruby-comment"># превращает в массив байтов</span>
+<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;array равен #{@@array}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-random_e" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">random_e</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>метод для генерации e</p>
+          
+          
+
+          
+          <div class="method-source-code" id="random_e-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">random_e</span>
+    <span class="ruby-ivar">@e</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-value">100</span>)
+    <span class="ruby-keyword">while</span> <span class="ruby-operator">!</span><span class="ruby-constant">RSA</span><span class="ruby-operator">::</span><span class="ruby-constant">Math</span>.<span class="ruby-identifier">coprime?</span>(<span class="ruby-ivar">@e</span>,<span class="ruby-ivar">@f</span>) <span class="ruby-keyword">do</span> <span class="ruby-comment">#проверяем на взаимную простоту числа e,d</span>
+                    <span class="ruby-ivar">@e</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-value">100</span>)
+            <span class="ruby-keyword">end</span>
+
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;e пользователя  равен: #{@e}&quot;</span> 
+            <span class="ruby-identifier">puts</span> <span class="ruby-constant">RSA</span><span class="ruby-operator">::</span><span class="ruby-constant">Math</span>.<span class="ruby-identifier">coprime?</span>(<span class="ruby-ivar">@e</span>,<span class="ruby-ivar">@f</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-user_A_crypt_private_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_A_crypt_private_key</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>пользователь А  шифрует сообщение своим закрытым ключом. В  результате этих
+действий пользователь А подписывает сообщение.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="user_A_crypt_private_key-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_A_crypt_private_key</span>
+    <span class="ruby-identifier">@@c</span> = []
+
+    <span class="ruby-identifier">@@array</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">number</span><span class="ruby-operator">|</span>
+                    <span class="ruby-identifier">@@c</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">number</span> <span class="ruby-operator">**</span> <span class="ruby-ivar">@e</span> <span class="ruby-operator">%</span> <span class="ruby-ivar">@N</span>) 
+            <span class="ruby-keyword">end</span>
+
+            <span class="ruby-identifier">@@array</span>.<span class="ruby-identifier">clear</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;c равен #{@@c}&quot;</span>
+            
+    <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-user_A_crypt_public_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_A_crypt_public_key</span><span
+            class="method-args">(a,b)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>шифрует то, что получилось на шаге 1 открытым ключом пользователя Б.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="user_A_crypt_public_key-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 81</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_A_crypt_public_key</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>)    
+    <span class="ruby-identifier">@@g</span> = []
+
+            <span class="ruby-identifier">@@c</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">|</span>
+                    <span class="ruby-identifier">@@g</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">number</span> <span class="ruby-operator">**</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">b</span>)    
+            <span class="ruby-keyword">end</span>
+
+            <span class="ruby-identifier">@@c</span>.<span class="ruby-identifier">clear</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;g равен #{@@g}&quot;</span>
+            
+    <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-user_B_crypt_private_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_B_crypt_private_key</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>сообщение расшифровывается. закрытм ключом пользователя B</p>
+          
+          
+
+          
+          <div class="method-source-code" id="user_B_crypt_private_key-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user_B_crypt_private_key</span>
+        <span class="ruby-identifier">@@g</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">|</span> 
+                <span class="ruby-identifier">@@c</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">number</span> <span class="ruby-operator">**</span> <span class="ruby-ivar">@e</span> <span class="ruby-operator">%</span> <span class="ruby-ivar">@N</span>) 
+        <span class="ruby-keyword">end</span>
+
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;c равен #{@@c}&quot;</span>  
+        
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-user_B_crypt_public_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_B_crypt_public_key</span><span
+            class="method-args">(a,b)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>производится проверка подписи пользователя А c помощью открытого ключа
+пользователя A</p>
+          
+          
+
+          
+          <div class="method-source-code" id="user_B_crypt_public_key-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 104</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">user_B_crypt_public_key</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>)
+    <span class="ruby-identifier">@@c</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">|</span>
+                    <span class="ruby-identifier">@@array</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">number</span> <span class="ruby-operator">**</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">b</span>) 
+            <span class="ruby-keyword">end</span>
+
+            <span class="ruby-identifier">print</span> <span class="ruby-node">&quot;array равен #{@@array}&quot;</span>
+            <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+
+            <span class="ruby-identifier">print</span> <span class="ruby-node">&quot;Cлово: #{ @@array.pack(&#39;U*&#39;)}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="private-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Private Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>производится вывод всех объектов</p>
+          
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File rsa.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
